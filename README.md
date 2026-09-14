@@ -1,18 +1,26 @@
-# Ngôi nhà số V4.1
+# Ngôi Nhà Số — Family Core Foundation V5
 
-Website độc lập gồm 28 công cụ thực dụng cho gia đình, công việc và kinh doanh.
+Nền tảng điều phối gia đình và quản trị ngôi nhà. Core hoạt động không cần thiết bị; cảm biến, năng lượng và tự động hóa là module tùy chọn.
 
-## Nội dung chính
+## Foundation V5
 
-- Việc và thời gian: hạn nộp, Pomodoro và bộ hẹn giờ nhiều món
-- Tiền bạc: chia hóa đơn theo món/người và tính khuyến mãi nhiều tầng
-- Gia đình: thực đơn tuần, danh sách chợ, đồ đi học, thẻ từ vựng và ngày quan trọng
-- Văn phòng: kiểm trước khi gửi, tách việc từ biên bản và làm rõ giấy tờ
-- Quyết định và giải trí: ma trận có trọng số, bốc tên, xếp lượt và chia đội
-- Kinh doanh: giá bán, lợi nhuận và chiết khấu tối đa
+- Dashboard Hôm nay: việc mở, lịch 7 ngày và tình trạng hồ sơ nhà
+- Gia đình: hồ sơ hộ, thành viên, lịch chung và danh sách mua sắm
+- Ngôi nhà: phòng, tài sản và ngày bảo trì tiếp theo
+- Thư viện: giữ nguyên 28 công cụ thực dụng
+- Module tùy chọn: Chăm sóc, An toàn, Năng lượng và Tự động hóa
+- Migration an toàn từ dữ liệu V4 sang V5
+- Sao lưu/khôi phục JSON và phát hiện xung đột giữa các tab
 
-Dữ liệu được tự động lưu trong trình duyệt. Người dùng có thể xuất bản sao lưu JSON và khôi phục trên thiết bị khác.
+## Tài liệu Giai đoạn 1
 
-Website: https://meicarevn.github.io/ngoi-nha-so/
+- [SWOT đối thủ và lựa chọn Core MVP](docs/phase-1-swot.md)
+- [Product Foundation V5](docs/phase-1-product-foundation.md)
 
-Danh mục công cụ được triển khai theo tài liệu tham khảo do người dùng cung cấp từ Học viện AI; phần giao diện và chức năng được xây dựng độc lập cho Ngôi nhà số.
+## Trạng thái dữ liệu
+
+Foundation hiện dùng localStorage để kiểm chứng luồng sản phẩm và giữ khả năng chạy ngoại tuyến. Bước backend tiếp theo sẽ bổ sung tài khoản hộ gia đình, đồng bộ nhiều thiết bị và phân quyền bằng Supabase Row Level Security.
+
+Website production hiện tại: https://meicarevn.github.io/ngoi-nha-so/
+
+Nhánh đang kiểm thử: `build/phase-1-core`
